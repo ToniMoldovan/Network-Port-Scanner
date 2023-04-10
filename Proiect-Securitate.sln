@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proiect-Securitate", "Proiect-Securitate\Proiect-Securitate.csproj", "{C2E5EB8B-E6F3-462B-A9C7-FC8CDEA63F18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2E5EB8B-E6F3-462B-A9C7-FC8CDEA63F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E5EB8B-E6F3-462B-A9C7-FC8CDEA63F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E5EB8B-E6F3-462B-A9C7-FC8CDEA63F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E5EB8B-E6F3-462B-A9C7-FC8CDEA63F18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E342BEC7-F123-4140-B6CC-F587D1B2E1F6}
+	EndGlobalSection
+EndGlobal
