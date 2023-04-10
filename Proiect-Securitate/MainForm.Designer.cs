@@ -29,33 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.scanNetworkBtn = new System.Windows.Forms.Button();
+            this.generateTrafficBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.button3 = new System.Windows.Forms.Button();
+            this.scanOpenPortsBtn = new System.Windows.Forms.Button();
             this.btn_testScript = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // scanNetworkBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 107);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 65);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Scan Network";
-            this.button1.UseVisualStyleBackColor = true;
+            this.scanNetworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scanNetworkBtn.Location = new System.Drawing.Point(12, 107);
+            this.scanNetworkBtn.Name = "scanNetworkBtn";
+            this.scanNetworkBtn.Size = new System.Drawing.Size(111, 65);
+            this.scanNetworkBtn.TabIndex = 0;
+            this.scanNetworkBtn.Text = "Scan Network";
+            this.scanNetworkBtn.UseVisualStyleBackColor = true;
+            this.scanNetworkBtn.Click += new System.EventHandler(this.scanNetworkBtn_Click);
             // 
-            // button2
+            // generateTrafficBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(570, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 65);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Generate Network";
-            this.button2.UseVisualStyleBackColor = true;
+            this.generateTrafficBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateTrafficBtn.Location = new System.Drawing.Point(640, 107);
+            this.generateTrafficBtn.Name = "generateTrafficBtn";
+            this.generateTrafficBtn.Size = new System.Drawing.Size(132, 65);
+            this.generateTrafficBtn.TabIndex = 1;
+            this.generateTrafficBtn.Text = "Generate Traffic";
+            this.generateTrafficBtn.UseVisualStyleBackColor = true;
+            this.generateTrafficBtn.Click += new System.EventHandler(this.generateTrafficBtn_Click);
             // 
             // label1
             // 
@@ -76,20 +78,21 @@
             this.progressBar.TabIndex = 3;
             this.progressBar.UseWaitCursor = true;
             // 
-            // button3
+            // scanOpenPortsBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(167, 107);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 65);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Scan Open Ports";
-            this.button3.UseVisualStyleBackColor = true;
+            this.scanOpenPortsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scanOpenPortsBtn.Location = new System.Drawing.Point(208, 107);
+            this.scanOpenPortsBtn.Name = "scanOpenPortsBtn";
+            this.scanOpenPortsBtn.Size = new System.Drawing.Size(132, 65);
+            this.scanOpenPortsBtn.TabIndex = 4;
+            this.scanOpenPortsBtn.Text = "Scan Open Ports";
+            this.scanOpenPortsBtn.UseVisualStyleBackColor = true;
+            this.scanOpenPortsBtn.Click += new System.EventHandler(this.scanOpenPortsBtn_Click);
             // 
             // btn_testScript
             // 
             this.btn_testScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_testScript.Location = new System.Drawing.Point(376, 107);
+            this.btn_testScript.Location = new System.Drawing.Point(431, 107);
             this.btn_testScript.Name = "btn_testScript";
             this.btn_testScript.Size = new System.Drawing.Size(132, 65);
             this.btn_testScript.TabIndex = 5;
@@ -103,11 +106,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 421);
             this.Controls.Add(this.btn_testScript);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.scanOpenPortsBtn);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.generateTrafficBtn);
+            this.Controls.Add(this.scanNetworkBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -122,11 +125,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button scanNetworkBtn;
+        private System.Windows.Forms.Button generateTrafficBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button scanOpenPortsBtn;
         private System.Windows.Forms.Button btn_testScript;
     }
 }
